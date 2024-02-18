@@ -18,14 +18,14 @@ export const WeeklyNextIcon: FC<IconProps> = ({ className }) => {
         rx="4"
         transform="rotate(-90 0 28)"
         fill="#7D8DA6"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <path
         d="M11.6667 19.8333L17.5 13.4167L11.6667 7"
         stroke="#7D8DA6"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

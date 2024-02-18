@@ -11,12 +11,12 @@ export const MyDevelopmentIcon: FC<IconProps> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <mask id="path-1-inside-1_6_119" fill="white">
+      <mask id="path-1-inside-1_6_119" fill="#1576bc">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
           d="M0.762695 -0.762085V26.3135C0.762695 27.6191 1.28137 28.8713 2.20463 29.7945C3.12789 30.7177 4.38009 31.2363 5.68577 31.2363H32.7627"
-          fill="#adb5bd"
+          fill="red"
         />
       </mask>
       <path

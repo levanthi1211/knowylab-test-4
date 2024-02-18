@@ -18,14 +18,14 @@ export const WeeklyPrevIcon: FC<IconProps> = ({ className }) => {
         rx="4"
         transform="rotate(90 28 0)"
         fill="#7D8DA6"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <path
         d="M16.3333 8.16667L10.5 14.5833L16.3333 21"
         stroke="#7D8DA6"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

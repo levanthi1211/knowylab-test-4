@@ -14,9 +14,9 @@ export const ChevronLeftIcon: FC<IconProps> = ({ className }) => {
       <path
         d="M15.3747 5.74986L8.6247 12.4999L15.3747 19.2499"
         stroke="#525F7F"
-        stroke-width="2.25"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

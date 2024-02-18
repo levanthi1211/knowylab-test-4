@@ -1,0 +1,159 @@
+.weekly {
+  width: 1212px;
+  height: 100%;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  box-shadow: 0px 2px 6px 0px #00000040;
+  border-radius: 20px;
+  padding: 24px 16px 0px;
+
+  &_header {
+    margin-left: 52px;
+    margin-right: 17px;
+    height: 40px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .buttons {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        div {
+          cursor: pointer;
+        }
+      }
+
+      .title {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #525f7f;
+      }
+    }
+
+    .right {
+      .select {
+        position: relative;
+        display: flex;
+        width: 164px;
+        height: 40px;
+        border-radius: 0.25em;
+        overflow: hidden;
+
+        border-radius: 8px;
+        border: 1px solid #1576bc;
+      }
+      select {
+        appearance: none;
+        border: 0;
+        box-shadow: none;
+        outline: none;
+
+        flex: 1;
+        padding: 0 1em;
+        color: #525f7f;
+        background-color: white;
+
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        cursor: pointer;
+        &::-ms-expand {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .header_label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .day_in_week,
+    .day_in_month {
+      font-family: Open Sans;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    .day_in_week {
+      font-weight: 400;
+      color: #adb5bd;
+
+      &.today {
+        color: #32325d;
+      }
+
+      &.weekends {
+        color: #fd7e14 !important;
+      }
+    }
+
+    .day_in_month {
+      font-weight: 400;
+      color: #8898aa;
+
+      &.today {
+        font-weight: 700;
+        color: #212529;
+      }
+
+      &.weekends {
+        color: #ffb647 !important;
+      }
+    }
+
+    .events {
+      display: none;
+      background: #f56565;
+      box-shadow: 0px 2px 6px 0px #00000040;
+      color: white;
+      display: flex;
+      gap: 2.5px;
+      justify-content: center;
+      align-items: center;
+      width: 37px;
+      height: 29px;
+      border-radius: 4px;
+      cursor: pointer;
+
+      span {
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+  }
+
+  .slot_label {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #212529;
+  }
+}

@@ -1,0 +1,17 @@
+.prev_arrow,
+.next_arrow {
+  position: absolute;
+  top: 140px;
+  width: 34px;
+  height: 34px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.prev_arrow {
+  left: 305px;
+}
+
+.next_arrow {
+  right: 223px;
+}

@@ -1,0 +1,38 @@
+.right_side {
+  box-shadow: 0px 2px 6px 0px #00000040;
+  height: 100%;
+  width: 339px;
+  border-radius: 20px;
+  gap: 16px;
+  padding: 24px;
+
+  .calendar {
+    font-family: Open Sans;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      .title {
+        font-family: Open Sans;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #525f7f;
+      }
+      .buttons {
+        display: flex;
+        gap: 8px;
+        div {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

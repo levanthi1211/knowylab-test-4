@@ -1,0 +1,100 @@
+.board {
+  .title {
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: -0.8px;
+    text-align: left;
+    color: #32325d;
+  }
+  .tab_panel {
+    width: 100%;
+    border-radius: 12px;
+    padding: 4px;
+    background: #f6f9fc;
+    margin-top: 16px;
+    display: flex;
+    .tab_item {
+      flex-grow: 1;
+      flex-basis: 0;
+      border-radius: 8px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &.active {
+        background: #ffffff;
+        box-shadow: 0px 2px 6px 0px #00000040;
+      }
+      span {
+        font-family: Open Sans;
+        color: #172b4d;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+    }
+  }
+
+  .list {
+    margin-top: 16px;
+    .list_item {
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+
+      .left {
+        margin-right: 8px;
+        .avatar {
+          position: relative;
+          .status {
+            position: absolute;
+            border-radius: 50%;
+            outline: 1px solid white;
+            background: white;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #20c997;
+            top: 0px;
+            right: 0px;
+          }
+        }
+      }
+
+      .mid {
+        flex-grow: 1;
+        .name {
+          font-family: Lexend;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #172b4d;
+        }
+
+        .tag {
+          display: inline-block;
+          padding: 2px 4px;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 15px;
+          letter-spacing: 0px;
+          text-align: left;
+          border-radius: 2px;
+        }
+      }
+
+      .right {
+        .mail {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

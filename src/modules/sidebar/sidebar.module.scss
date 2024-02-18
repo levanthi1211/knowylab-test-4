@@ -1,0 +1,40 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  box-shadow: 0px 4px 9px 0px #0000000f;
+  box-shadow: 0px 4px 26px 0px #00000026;
+  padding: 24px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  flex: 0 0 200px;
+
+  .seperator {
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      rgba(224, 225, 226, 0) 0%,
+      #e0e1e2 49.52%,
+      rgba(224, 225, 226, 0.15625) 99.04%
+    );
+  }
+
+  .bottom {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1576bc;
+    margin: -4px;
+    span {
+      cursor: pointer;
+      transition: all 0.2s ease-in;
+      &:hover {
+        color: #adb5bd;
+      }
+    }
+  }
+}

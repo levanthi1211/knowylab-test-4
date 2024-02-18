@@ -1,0 +1,46 @@
+.tabs {
+  display: flex;
+  gap: 25px;
+  .tab {
+    cursor: pointer;
+    border-radius: 8px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    &.active {
+      background: #3b6ef8;
+    }
+    .icon_container {
+      width: 18px;
+      height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        path {
+          fill: #4f4f4f;
+        }
+        &.active {
+          path {
+            fill: white;
+          }
+        }
+      }
+    }
+
+    .title {
+      color: #828282;
+      font-family: Lexend;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: center;
+      &.active {
+        color: white;
+      }
+    }
+  }
+}

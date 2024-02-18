@@ -1,0 +1,32 @@
+import { FC } from "react";
+import { IconProps } from "./type";
+
+export const WeeklyPrevIcon: FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      width="28"
+      height="28"
+      viewBox="0 0 28 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <rect
+        x="28"
+        width="28"
+        height="28"
+        rx="4"
+        transform="rotate(90 28 0)"
+        fill="#7D8DA6"
+        fill-opacity="0.1"
+      />
+      <path
+        d="M16.3333 8.16667L10.5 14.5833L16.3333 21"
+        stroke="#7D8DA6"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};

@@ -58,8 +58,11 @@ export const RightSide = () => {
           height="auto"
           events={[
             {
-              start: "2024-02-12",
-              end: "2024-02-19",
+              start: moment()
+                .startOf("isoWeek")
+                .weekday(1)
+                .format("YYYY-MM-DD"),
+              end: moment().startOf("isoWeek").weekday(8).format("YYYY-MM-DD"),
               display: "background",
             },
           ]}

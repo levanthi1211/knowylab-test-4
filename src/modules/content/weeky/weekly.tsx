@@ -12,8 +12,8 @@ import {
 import SelectArrowIcon from "/images/select_arrow.jpg";
 
 const events = [
-  { day: "2024-02-12", numOfEvents: 5 },
-  { day: "2024-02-16", numOfEvents: 5 },
+  { day: moment().startOf("isoWeek").weekday(1), numOfEvents: 5 },
+  { day: moment().startOf("isoWeek").weekday(5), numOfEvents: 5 },
 ];
 
 const timezones = [

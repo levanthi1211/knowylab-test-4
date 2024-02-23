@@ -1,0 +1,219 @@
+.leaderboard {
+  width: 450px;
+  height: 400px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-family: Lexend;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 137%;
+      letter-spacing: -0.8px;
+    }
+
+    .badges {
+      display: flex;
+      gap: 3px;
+      margin-right: -15px;
+
+      .badge {
+        border-radius: 6px;
+        background: #b0eed3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 8px;
+
+        color: #1aae6f;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 12px;
+        text-transform: uppercase;
+
+        &:not(:first-child) {
+          background: #eaeaea;
+        }
+      }
+    }
+  }
+
+  .yourself {
+    height: 88px;
+    border-radius: 20px;
+    background: #1576bc;
+    box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .information {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .leaderboard_name {
+        color: white;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+      }
+
+      .leaderboard_ranking {
+        color: white;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 137%;
+        letter-spacing: -0.8px;
+      }
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      background-color: white;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .item {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      height: 24px;
+
+      .ranking {
+        flex-grow: 0;
+        flex-basis: 0;
+
+        img {
+          display: block;
+        }
+
+        span {
+          color: #172b4d;
+          font-family: Lexend;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+
+      .user {
+        flex-grow: 1;
+        flex-basis: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .avatar {
+          width: 24px;
+          height: 24px;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+
+          .status {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 1px solid #20c997;
+            outline: 1px solid white;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            z-index: 99;
+
+            &.online {
+              background-color: #20c997;
+            }
+
+            &.offline {
+              background-color: white;
+            }
+          }
+        }
+
+        .avatar_alt {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            color: #fff;
+            font-family: "Open Sans";
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+          }
+        }
+
+        .name {
+          color: #172b4d;
+          font-family: Lexend;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+
+      .change {
+        flex-grow: 0;
+        flex-basis: 0;
+        display: flex;
+        align-items: center;
+
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+
+        &.increase {
+          color: #2dce89;
+        }
+
+        &.decrease {
+          color: #f56565;
+        }
+      }
+    }
+  }
+}

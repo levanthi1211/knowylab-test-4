@@ -1,0 +1,88 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  .card {
+    cursor: pointer;
+    width: 297px;
+    height: 118px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .top,
+    .bottom {
+      display: flex;
+    }
+
+    .top {
+      justify-content: space-between;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .title {
+          color: #8392ab;
+          font-family: Lexend;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 0.52px;
+        }
+
+        .progress {
+          color: #172b4d;
+          font-family: "Open Sans";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 100%;
+        }
+      }
+
+      .logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      .diff {
+        color: #e01e5a;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        &.increase {
+          color: #2dce89;
+        }
+      }
+
+      .time {
+        color: #8392ab;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Lexend;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.home {
+  width: 1580px;
+  margin: 0 auto;
+  top: -20px;
+  position: relative;
+
+  .row {
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+  }
+}

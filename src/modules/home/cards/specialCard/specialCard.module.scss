@@ -1,0 +1,70 @@
+.special_card {
+  width: 286px;
+  height: 118px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  .mask {
+    opacity: 0.75;
+    background: linear-gradient(122deg, #11cdef 9.06%, #1171ef 88.15%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .content {
+    z-index: 1;
+    padding: 12.5px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .title {
+      color: #fff;
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 162.5%;
+      letter-spacing: -0.8px;
+    }
+
+    .progress {
+      color: #fff;
+      font-family: "Lexend Deca";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%;
+      letter-spacing: -0.8px;
+    }
+
+    .bottom {
+      display: flex;
+      height: 29px;
+      padding: 8px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+      background: #009a58;
+      width: 100%;
+
+      span {
+        color: #f6f9fc;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+      }
+    }
+  }
+}

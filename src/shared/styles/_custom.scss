@@ -23,6 +23,50 @@
   }
 }
 
+#login-bg {
+  .slick-slider,
+  .slick-list,
+  .slick-track,
+  .slick-slide div {
+    height: 100%;
+  }
+
+  .slick-dots {
+    height: 16px;
+    bottom: 12.8%;
+    padding-left: 11.9%;
+    text-align: start;
+    z-index: 99;
+
+    .custom-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      background: #f7f7f7;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .slick-active {
+      cursor: pointer;
+      width: 48px;
+      .custom-dot {
+        width: 48px;
+        background: white;
+      }
+    }
+  }
+}
+
+#advertise-bg {
+  .slick-slider,
+  .slick-list,
+  .slick-track,
+  .slick-slide > div {
+    height: 100%;
+  }
+}
+
 /* full calendar */
 
 #weekly {

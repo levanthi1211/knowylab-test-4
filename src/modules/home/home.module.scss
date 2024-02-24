@@ -8,5 +8,15 @@
     display: flex;
     margin-top: 24px;
     justify-content: space-between;
+
+    &:last-child {
+      margin-top: 29px;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
   }
 }

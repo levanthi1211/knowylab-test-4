@@ -17,7 +17,10 @@ export const Form = () => {
             <p className={styles.right}>Good to see you today!</p>
           </div>
           <input className={styles.input} placeholder="Your username" />
-          <input className={styles.input} placeholder="Your password" />
+          <input
+            className={`${styles.input} ${styles.password}`}
+            placeholder="Your password"
+          />
           <button className={styles.submit}>LOGIN</button>
           <p className={styles.forgot_password}>
             Forgot your password? <span>Click here</span>

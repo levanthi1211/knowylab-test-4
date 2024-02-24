@@ -26,3 +26,8 @@ export * from "./Increase";
 export * from "./Decrease";
 export * from "./AdvertiseNext";
 export * from "./AdvertisePrev";
+export * from "./Box";
+export * from "./Phone";
+export * from "./Tag";
+export * from "./MoreHorizontal";
+export * from "./Logout";

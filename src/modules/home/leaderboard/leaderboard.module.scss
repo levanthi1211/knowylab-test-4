@@ -112,12 +112,15 @@
       .ranking {
         flex-grow: 0;
         flex-basis: 0;
+        width: 24px;
 
         img {
           display: block;
         }
 
         span {
+          width: 24px;
+          display: block;
           color: #172b4d;
           font-family: Lexend;
           font-size: 16px;

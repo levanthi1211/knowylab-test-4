@@ -1,10 +1,21 @@
+import { FC } from "react";
 import { NotificationIcon } from "../../../shared/components/icons/Notification";
 import styles from "./card.module.scss";
 import SmallAvatarImage from "/images/smal_avatar.jpg";
 
-export const Card = () => {
+type CardProps = {
+  handleClick?: () => void;
+};
+
+export const Card: FC<CardProps> = (props) => {
+  const { handleClick } = props;
   return (
-    <div className={styles.card}>
+    <div
+      className={styles.card}
+      onClick={() => {
+        handleClick?.();
+      }}
+    >
       <p className={styles.date}>August 10th, 2023</p>
       <div className={styles.bottom}>
         <div className={styles.notification}>

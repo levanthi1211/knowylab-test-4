@@ -2,6 +2,7 @@ import { FC } from "react";
 import styles from "./sidebar.module.scss";
 import { Information } from "./information/information";
 import { Menu } from "./menu/menu";
+import { LogoutIcon } from "../../shared/components/icons";
 
 export const Sidebar: FC = () => {
   return (
@@ -10,7 +11,10 @@ export const Sidebar: FC = () => {
       <div className={styles.seperator}></div>
       <Menu />
       <div className={styles.bottom}>
-        <span>Logout</span> | <span>Change password</span>
+        <span>
+          <LogoutIcon /> Logout
+        </span>
+        | <span>Change password</span>
       </div>
     </div>
   );

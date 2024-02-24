@@ -77,7 +77,7 @@ export const Leaderboard: FC<LeaderboardProps> = (props) => {
                 ) : (
                   ""
                 )}
-                <div className={styles.name}>Center Name 1 </div>
+                <div className={styles.name}>{user.name}</div>
               </div>
               {user.change > 0 ? (
                 <div className={`${styles.change} ${styles.increase}`}>

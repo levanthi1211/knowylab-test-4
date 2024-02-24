@@ -1,7 +1,7 @@
-import { Header } from "../../modules/header/header";
-import { Home } from "../../modules/home/home";
-import { Sidebar } from "../../modules/sidebar/sidebar";
-import styles from "./home.module.scss";
+import { Header } from '../../modules/header/header'
+import { Home } from '../../modules/home/home'
+import { Sidebar } from '../../modules/sidebar/sidebar'
+import styles from './home.module.scss'
 
 export const HomePage = () => {
   return (
@@ -12,5 +12,5 @@ export const HomePage = () => {
         <Home />
       </div>
     </div>
-  );
-};
+  )
+}

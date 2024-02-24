@@ -1,8 +1,12 @@
+import { BoxIcon, PhoneIcon, TagIcon } from "../../shared/components/icons";
 import { Advertise } from "./advertise/advertise";
 import { Cards } from "./cards/cards";
+import { Categories } from "./categories/categories";
+import { CategoryProps } from "./categories/categoryTypes";
 import styles from "./home.module.scss";
 import { Leaderboard } from "./leaderboard/leaderboard";
 import { LeaderboardProps } from "./leaderboard/leaderboardTypes";
+import { Table } from "./table/table";
 
 const leaderboards: LeaderboardProps[] = [
   {
@@ -105,6 +109,64 @@ const leaderboards: LeaderboardProps[] = [
   },
 ];
 
+const categories: CategoryProps[] = [
+  {
+    header: "Access to work station",
+    items: [
+      {
+        logo: <BoxIcon />,
+        title: "HUB 24",
+        subtitle: "CRM, SIS, Ticket",
+      },
+      {
+        logo: <PhoneIcon />,
+        title: "Slack",
+        subtitle: "Communication Channel",
+      },
+      {
+        logo: <TagIcon />,
+        title: "Teacher Drive ",
+        subtitle: "Teaching Materials",
+      },
+      {
+        logo: <TagIcon />,
+        title: "Teacher Drive ",
+        subtitle: "Teaching Materials",
+      },
+      {
+        logo: <TagIcon />,
+        title: "Teacher Drive ",
+        subtitle: "Teaching Materials",
+      },
+    ],
+  },
+  {
+    header: "Useful link",
+    items: [
+      {
+        logo: <BoxIcon />,
+        title: "IELTS",
+        subtitle: "30 Categories",
+      },
+      {
+        logo: <PhoneIcon />,
+        title: "My centre info",
+        subtitle: "01 categories",
+      },
+      {
+        logo: <TagIcon />,
+        title: "FAQs",
+        subtitle: "12 categories ",
+      },
+      {
+        logo: <TagIcon />,
+        title: "Teacher Drive ",
+        subtitle: "Teaching Materials",
+      },
+    ],
+  },
+];
+
 export const Home = () => {
   return (
     <div className={styles.home}>
@@ -114,6 +176,16 @@ export const Home = () => {
           <Leaderboard key={index} {...leaderboard} />
         ))}
         <Advertise />
+      </div>
+      <div className={styles.row}>
+        <div className={styles.left}>
+          {categories.map((category, index) => (
+            <Categories key={index} {...category} />
+          ))}
+        </div>
+        <div className={styles.right}>
+          <Table />
+        </div>
       </div>
     </div>
   );

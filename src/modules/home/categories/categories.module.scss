@@ -1,0 +1,67 @@
+.categories {
+  border-radius: 15px;
+  border: 1px solid #e2e2e2;
+  background: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px 0px;
+  width: 295px;
+
+  h5 {
+    color: #161616;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%;
+    letter-spacing: -0.8px;
+    margin-bottom: 16px;
+    padding: 0px 24px;
+  }
+
+  .list {
+    .item {
+      padding: 8px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .logo {
+        width: 36px;
+        height: 36px;
+        background: #212229;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text {
+        flex-grow: 1;
+        flex-basis: 0;
+
+        .title {
+          color: #172b4d;
+          font-family: Lexend;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 162.5%;
+          letter-spacing: -0.8px;
+        }
+
+        .subtitle {
+          color: #8392ab;
+          font-feature-settings: "clig" off, "liga" off;
+          font-family: "Open Sans";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 125%;
+        }
+      }
+
+      .arrow {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,284 @@
+.notification {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(217, 217, 217, 0.8);
+    z-index: 999;
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
+
+  .content {
+    position: fixed;
+    top: 0;
+    right: 13px;
+    z-index: 1000;
+    width: 448px;
+    background-color: white;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.06),
+      0px 4px 26px 0px rgba(0, 0, 0, 0.15);
+    height: 100%;
+
+    transform: translateX(448px);
+    transition: all 0.2s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+
+    &.show {
+      transform: translateX(0);
+    }
+
+    .header {
+      padding: 24px;
+      text-align: center;
+      border-bottom: 1px solid #dee2e6;
+
+      .time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+          color: #212529;
+          text-align: center;
+          font-family: "Open Sans";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+    }
+
+    .today {
+      padding: 24px;
+      border-bottom: 1px solid #dee2e6;
+
+      h3 {
+        color: #172b4d;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 137%;
+        letter-spacing: -0.8px;
+        margin-bottom: 16px;
+      }
+
+      .list {
+        max-height: 254px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+          width: 6px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: #8898aa;
+          border-radius: 3px;
+        }
+
+        .item {
+          padding: 8px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          cursor: pointer;
+
+          &:not(:last-child) {
+            margin-bottom: 16px;
+          }
+
+          .status {
+            width: 8px;
+            height: 8px;
+            background-color: #1576bc;
+            border-radius: 4px;
+          }
+
+          .information {
+            flex-grow: 1;
+            flex-basis: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .tag {
+              height: 23px;
+              border-radius: 8px;
+              display: inline-block;
+              width: fit-content;
+              padding: 4px;
+              background: linear-gradient(
+                68deg,
+                #f3410f 54.99%,
+                #f53b58 79.29%
+              );
+
+              span {
+                color: #fff;
+                font-feature-settings: "clig" off, "liga" off;
+                font-family: "Open Sans";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 125%;
+              }
+            }
+
+            .message {
+              color: #172b4d;
+              font-family: "Open Sans";
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+
+              display: block;
+              text-overflow: ellipsis;
+              word-wrap: break-word;
+              overflow: hidden;
+              max-height: 48px;
+            }
+
+            .bottom {
+              display: flex;
+              justify-content: space-between;
+
+              color: #8898aa;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: "Open Sans";
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 125%;
+
+              .seen {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .older {
+      padding: 0 24px 24px;
+      flex: 0 1 auto;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      position: relative;
+
+      h3 {
+        padding-top: 24px;
+        color: #172b4d;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 135%;
+        letter-spacing: -0.8px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #e9ecef;
+        position: sticky;
+        top: 0;
+        background-color: white;
+      }
+
+      .list {
+        margin-top: 8px;
+
+        .item {
+          padding: 8px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          cursor: pointer;
+          background-color: #f6f9fc;
+          border-radius: 8px;
+
+          &:not(:last-child) {
+            margin-bottom: 8px;
+          }
+
+          .status {
+            width: 8px;
+            height: 8px;
+            background-color: #1576bc;
+            border-radius: 4px;
+          }
+
+          .information {
+            flex-grow: 1;
+            flex-basis: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .item_header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .title {
+                span {
+                  color: #000;
+                  font-family: "Open Sans";
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 162.5%;
+                  letter-spacing: -0.8px;
+                }
+              }
+            }
+
+            .message {
+              color: #172b4d;
+              font-family: "Open Sans";
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+
+              display: block;
+              text-overflow: ellipsis;
+              word-wrap: break-word;
+              overflow: hidden;
+              max-height: 96px;
+            }
+
+            .bottom {
+              display: flex;
+              justify-content: space-between;
+
+              color: #8898aa;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: "Open Sans";
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 125%;
+
+              .seen {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

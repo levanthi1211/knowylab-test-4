@@ -9,6 +9,7 @@
   position: sticky;
   top: 0;
   flex: 0 0 200px;
+  position: relative;
 
   .seperator {
     height: 2px;
@@ -28,7 +29,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: #1576bc;
-    margin: -4px;
+    margin: -12px;
     span {
       cursor: pointer;
       transition: all 0.2s ease-in;

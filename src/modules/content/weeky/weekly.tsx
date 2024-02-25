@@ -5,11 +5,11 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import moment from "moment";
 import { useState, useRef } from "react";
 import {
-  EventsIcon,
   WeeklyNextIcon,
   WeeklyPrevIcon,
 } from "../../../shared/components/icons";
 import SelectArrowIcon from "/images/select_arrow.jpg";
+import { Event } from "./event/event";
 
 const events = [
   { day: moment().startOf("isoWeek").weekday(1), numOfEvents: 5 },
@@ -248,13 +248,7 @@ export const Weeky = () => {
               >
                 {moment(date).format("DD")}
               </span>
-              {event ? (
-                <div className={styles.events}>
-                  <EventsIcon /> <span>{event.numOfEvents}</span>
-                </div>
-              ) : (
-                <></>
-              )}
+              {event ? <Event numOfEvents={event.numOfEvents} /> : <></>}
             </div>
           );
         }}
@@ -265,6 +259,26 @@ export const Weeky = () => {
             </div>
           );
         }}
+        events={[
+          {
+            title: "PT/DEMO at PNT center",
+            start: "2024-02-24T06:00:00+07:00",
+            end: "2024-02-24T09:00:00+07:00",
+            backgroundColor: "#70D9D3",
+          },
+          {
+            title: "Demo 1",
+            start: "2024-02-22T08:00:00+07:00",
+            end: "2024-02-22T09:00:00+07:00",
+            backgroundColor: "#EABEFF",
+          },
+          {
+            title: "Workshop 1",
+            start: "2024-02-23T12:00:00+07:00",
+            end: "2024-02-23T14:00:00+07:00",
+            backgroundColor: "#A2D68F",
+          },
+        ]}
       />
     </div>
   );

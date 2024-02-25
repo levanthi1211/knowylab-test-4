@@ -31,3 +31,4 @@ export * from "./Phone";
 export * from "./Tag";
 export * from "./MoreHorizontal";
 export * from "./Logout";
+export * from "./Error";
